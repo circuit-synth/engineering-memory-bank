@@ -1,15 +1,15 @@
-# CLAUDE.md - memory-bank
+# CLAUDE.md - engineering-memory-bank
 
-This file provides guidance to Claude Code when working on the memory-bank project.
+This file provides guidance to Claude Code when working on the engineering-memory-bank project.
 
 ## Project Overview
 
-memory-bank is an AI-powered engineering decision documentation system that automatically captures and analyzes design decisions with git integration.
+engineering-memory-bank is an AI-powered engineering decision documentation system that automatically captures and analyzes design decisions with git integration.
 
 ## Architecture
 
 ```
-memory-bank/
+engineering-memory-bank/
 ├── python/                          # Core Python library
 │   ├── memory_bank/                # Main package
 │   │   ├── core/                   # Core decision management
@@ -44,25 +44,25 @@ uv run isort memory_bank/ tests/
 ### Memory Bank Usage
 ```bash
 # Initialize in project
-memory-bank init
+engineering-memory-bank init
 
 # Setup git hooks
-memory-bank setup-hooks
+engineering-memory-bank setup-hooks
 
 # Generate report
-memory-bank report
+engineering-memory-bank report
 
 # Export decisions
-memory-bank export decisions.json
+engineering-memory-bank export decisions.json
 ```
 
 ## Core API Usage
 
 ```python
-import memory_bank as mb
+import engineering_memory_bank as emb
 
 # Initialize memory bank
-bank = mb.init_project('/path/to/project')
+bank = emb.init_project('/path/to/project')
 
 # Log decisions
 bank.log_decision(

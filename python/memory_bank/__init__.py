@@ -1,5 +1,5 @@
 """
-memory-bank: AI-Powered Engineering Decision Documentation System
+engineering-memory-bank: AI-Powered Engineering Decision Documentation System
 
 An intelligent system for automatically capturing, organizing, and analyzing engineering 
 design decisions with git integration and AI-powered insights.

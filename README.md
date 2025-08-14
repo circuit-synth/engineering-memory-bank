@@ -1,4 +1,4 @@
-# memory-bank
+# engineering-memory-bank
 
 **AI-Powered Engineering Decision Documentation System**
 
@@ -16,7 +16,7 @@ An intelligent system for automatically capturing, organizing, and analyzing eng
 
 ## 🆚 vs. Existing Solutions
 
-| Feature | memory-bank | Traditional Docs | Engineering Notebooks |
+| Feature | engineering-memory-bank | Traditional Docs | Engineering Notebooks |
 |---------|-------------|------------------|----------------------|
 | **Automatic Capture** | ✅ Git hooks | ❌ Manual | ❌ Manual |
 | **AI Analysis** | ✅ Claude integration | ❌ None | ❌ Limited |
@@ -29,11 +29,11 @@ An intelligent system for automatically capturing, organizing, and analyzing eng
 
 ```bash
 # Install from PyPI (coming soon)
-pip install memory-bank
+pip install engineering-memory-bank
 
 # Or install from source
-git clone https://github.com/circuit-synth/memory-bank.git
-cd memory-bank
+git clone https://github.com/circuit-synth/engineering-memory-bank.git
+cd engineering-memory-bank
 pip install -e .
 ```
 
@@ -67,10 +67,10 @@ git commit -m "Switch to buck converter for 90% efficiency vs 60% with linear re
 ### Manual Decision Logging
 
 ```python
-import memory_bank as mb
+import engineering_memory_bank as emb
 
 # Log design decisions programmatically
-bank = mb.MemoryBank.current_project()
+bank = emb.MemoryBank.current_project()
 
 bank.log_decision(
     category='component_selection',
