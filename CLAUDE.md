@@ -141,6 +141,65 @@ Your power supply decision has been documented and will be available for future 
 - **jinja2**: Template rendering
 - **anthropic/openai**: AI integration (optional)
 
+## Memory Bank System - REQUIRED WORKFLOW
+
+This repository uses a **Code Memory Bank** system for persistent development context. **ALL DEVELOPMENT WORK MUST FOLLOW THIS WORKFLOW.**
+
+### 🚨 MANDATORY WORKFLOW FOR ALL AI DEVELOPMENT
+
+#### 1. BEFORE Starting Any Work:
+```bash
+# ALWAYS start by reading existing context
+1. Read .memory_bank/activeContext.md (current state)
+2. Read .memory_bank/decisionLog.md (past decisions) 
+3. Read .memory_bank/progress.md (current milestones)
+4. Check .memory_bank/productContext.md (project scope)
+```
+
+#### 2. FOR New Features (REQUIRED):
+```bash
+# Create PRD BEFORE coding
+1. Write PRD in .memory_bank/features/[feature-name].md
+2. Document requirements, design approach, success criteria
+3. Get alignment on approach before implementation
+```
+
+#### 3. DURING Development:
+```bash
+# Keep context current
+1. Update .memory_bank/activeContext.md with current work
+2. Document decisions in .memory_bank/decisionLog.md (ADR format)
+3. Track progress in .memory_bank/progress.md
+```
+
+#### 4. AFTER Completing Work:
+```bash
+# ALWAYS update memory bank
+/umb
+```
+
+### Memory Bank Structure
+
+- **activeContext.md**: Current session state, focus areas, files being worked on
+- **decisionLog.md**: All architectural decisions in ADR format with rationale
+- **productContext.md**: Project overview, value proposition, target users  
+- **progress.md**: Milestones, current tasks, success metrics
+- **features/**: PRDs for all planned features (REQUIRED before coding)
+
+### 🔍 Query Memory Bank
+
+Ask natural language questions about past decisions:
+- "What AI analysis approaches were chosen and why?"
+- "How does git integration capture engineering decisions?"
+- "What are the current cross-project knowledge priorities?"
+
+### ⚠️ CRITICAL: No Development Without Memory Bank
+
+1. **Never start coding** without reading existing memory bank context
+2. **Always write PRDs** for new features before implementation
+3. **Document all decisions** in ADR format with rationale
+4. **Use /umb command** before ending development sessions
+
 ## Related Projects
 
 - **kicad-sch-api**: Can use memory-bank for schematic design decisions
