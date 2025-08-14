@@ -16,7 +16,7 @@ maintainers = [
 ]
 keywords = [
     "engineering", "documentation", "ai", "git", "decisions", 
-    "knowledge-management", "automation", "mcp", "claude"
+    "knowledge-management", "automation", "claude"
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -45,9 +45,6 @@ dependencies = [
 ai = [
     "anthropic>=0.25.0",
     "openai>=1.0.0",
-]
-mcp = [
-    "mcp>=0.1.0",
 ]
 dev = [
     "pytest>=7.0.0",
